@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <div class="min-[700px]:w-[85%] full-content max-[699px]:p-8 lato-regular">
+        <div class="flex min-[700px]:flex-row max-[699px]:flex-col max-[699px]:gap-4 mt-6">
+            <div class="min-[700px]:basis-1/4">
+                <h3 class="dancing-script-regular text-5xl">Eagle</h3>
+                <h3 class="dancing-script-regular text-5xl">International</h3>
+            </div>
+            <div class="min-[700px]:basis-1/2  flex flex-row justify-start items-center ">
+                <input type="text" placeholder="Type here" class="input input-bordered rounded-none min-[700px]:w-[30vw]  " />
+                <button class="btn rounded-none "><span class="material-symbols-outlined max-[698px]:text-[20px]">
+                    search
+                    </span></button>
+            </div>
+            <div class="basis-1/4 max-[699px]:hidden">
+                
+            </div>
+        </div>
+        <div class="navbar bg-[#011c2a] min-h-2 max-[699px]:hidden mt-4">
+            <a class="text-[18px] text-white px-4 cursor-pointer">Paints</a>
+            <a class="text-[18px] text-white px-4 cursor-pointer">Chemicals</a>
+            <a class="text-[18px] text-white px-4 cursor-pointer">Rags</a>
+        </div>
+        <!-- mobile drawer -->
+        <div class="drawer min-[699px]:hidden mt-2 z-30">
+            <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+            <div class="drawer-content flex flex-col">
+              <!-- Navbar -->
+              <div class="w-full navbar bg-base-300">
+                <div class="flex-none lg:hidden">
+                  <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                  </label>
+                </div> 
+                <div class="flex-none hidden lg:block">
+                  <ul class="menu menu-horizontal">
+                    <!-- Navbar menu content here -->
+                    <li><a>Navbar Item 1</a></li>
+                    <li><a>Navbar Item 2</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Page content here -->
+            
+            </div> 
+            <div class="drawer-side">
+              <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+              <ul class="p-4 pt-16 accordion-menu w-80 min-h-full bg-base-200">
+                <!-- Sidebar content here -->
+                <li class="link">
+                    <div class="dropdown">
+                        
+                        <p>Python<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                    </div>
+                    <ul class="submenuItems">
+                        <li><a href="#">Python Level 1</a></li>
+                        <li><a href="#">Python Level 2</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <div class="dropdown">
+                      
+                        <p>Node-JS
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                    </div>
+                    <ul class="submenuItems">
+                        <li><a href="#">Node-JS Level 1</a></li>
+                        <li><a href="#">Node-JS Level 2</a></li>
+                        <li><a href="#">Node-JS Level 3</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <div class="dropdown">
+                       
+                        <p>React
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                    </div>
+                    <ul class="submenuItems">
+                        <li><a href="#">React Level 1</a></li>
+                        <li><a href="#">React Level 2</a></li>
+                        <li><a href="#">React Level 3</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <div class="dropdown">
+                       
+                        <p>Bootstrap
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                    </div>
+                    <ul class="submenuItems">
+                        <li><a href="#">Bootstrap Level 1</a></li>
+                        <li><a href="#">Bootstrap Level 2</a></li>
+                        <li><a href="#">Bootstrap Level 3</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="flex flex-row mt-2">
+            <div class="min-[699px]:basis-1/5 mr-2 max-[699px]:hidden">
+                <ul class="menu bg-[#3c434e] text-white w-56 p-0 [&_li>*]:rounded-none">
+                    <li class="sidebar_menu"><a>Home</a></li>
+                    <li class="sidebar_menu"><a>Our Products <span class="material-symbols-outlined flex flex-row justify-end">
+                        navigate_next</span></a>
+                        <ul class="child_menu">
+                            <li class="sidebar_menu_child"><a href="#">Chemicals</a></li>
+                            <li class="sidebar_menu_child"><a href="#">Chemicals</a></li>
+                            <li class="sidebar_menu_child"><a href="#">Chemicals</a></li>
+                            <li class="sidebar_menu_child"><a href="#">Chemicals</a></li>
+                            <li class="sidebar_menu_child"><a href="#">Chemicals</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar_menu"><a>Our Services</a></li>
+                    <li class="sidebar_menu"><a>Our Services</a></li>
+                    <li class="sidebar_menu"><a>Our Services</a></li>
+                    <li class="sidebar_menu"><a>Our Services</a></li>
+                    <li class="sidebar_menu"><a>Our Services</a></li>
+                </ul>
+            </div>
+            <div class="min-[699px]:basis-4/5  ">
+
+                <div>
+                    <img src="./images/unsplash_I6PLewng8pA.png" class="w-full" alt="">
+                </div>
+                <div class="mt-4 text-justify">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                          as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                         Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                          as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                         Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                         content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                          as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                         Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                </div>
+               
+
+                
+               
+            </div>
+             
+        </div>
+        <!-- category starts -->
+        <div class="cate flex flex-row justify-between mt-4 border-b-4 border-[#000]">
+            <h3 class="font-extrabold">Similar Products</h3>
+        </div>
+        <div class="flex flex-wrap mt-2 ">
+            <!-- all products starts -->
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+                <div class="border-4 border-[#000]">
+                    <img src="./images/chemical.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xs tracking-widest mt-2">Chemical</h3>
+                    <p class="font-bold">What is Egyptian Chemical?</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+                <div class="border-4 border-[#000]">
+                    <img src="./images/chemical.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xs tracking-widest mt-2">Chemical</h3>
+                    <p class="font-bold">What is Egyptian Chemical?</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+                <div class="border-4 border-[#000]">
+                    <img src="./images/chemical.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xs tracking-widest mt-2">Chemical</h3>
+                    <p class="font-bold">What is Egyptian Chemical?</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+                <div class="border-4 border-[#000]">
+                    <img src="./images/chemical.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xs tracking-widest mt-2">Chemical</h3>
+                    <p class="font-bold">What is Egyptian Chemical?</p>
+                </div>
+            </div>
+            
+            <!-- all products ends -->
+        </div>
+        <!-- category ends -->
+
+        <!-- Footer starts -->
+        <div class="flex min-[600px]:flex-row max-[599px]:flex-col bg-[#011c2a] mt-5 text-white p-8">
+            <div class="min-[1000px]:basis-[25%] min-[600px]:basis-[50%] flex flex-col justify-center gap-12">
+                <div>
+                    <h3 class="dancing-script-regular text-5xl">Eagle</h3>
+                    <h3 class="dancing-script-regular text-5xl">International</h3>
+                </div>
+                <div>
+                    <h3>Open</h3>
+                    <div>
+                        <p>Monday - Friday</p>
+                        <p>09:30 AM - 06:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-[1000px]:basis-[25%] min-[1000px]:flex min-[1000px]:flex-col max-[999px]:hidden justify-center gap-4">
+                <h3>Location</h3>
+                <p class="flex flex-row"><img src="./images/carbon_location-filled.png" alt=""> Address Line 1</p>
+                <p class="flex flex-row"><img src="./images/carbon_location-filled.png" alt=""> Address Line 2</p>
+            </div>
+            <div class="min-[1000px]:basis-[25%] min-[1000px]:flex min-[1000px]:flex-col max-[999px]:hidden justify-center">
+                <h3>Contact Us</h3>
+                <p>info@eagleInternational.com</p>
+            </div>
+            <div class="min-[1000px]:basis-[25%] min-[600px]:basis-[50%]">
+                <img src="./images/temp_logo.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- Footer ends -->
+
+    </div>
+
+    <script>
+
+
+        function accordion(){
+            let listElements = document.querySelectorAll('.link');
+
+            listElements.forEach(listElement => {
+                listElement.addEventListener('click', ()=>{
+                    if (listElement.classList.contains('active')){
+                        listElement.classList.remove('active');
+                    }else{
+                        listElements.forEach (listE => {
+                            listE.classList.remove('active');
+                        })
+                        listElement.classList.toggle('active');
+                    }
+                })
+            });
+        }
+        accordion();
+
+    </script>
+</body>
+</html>
